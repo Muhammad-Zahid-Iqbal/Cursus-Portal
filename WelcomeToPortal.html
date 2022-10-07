@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="css/WelcomeToPortal.css"/>
+    <link rel="stylesheet" href="css/ParentBodyArea.css"/>
+    <link rel="stylesheet" href="css/swiperSlide.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <div class="parent-header">
+            <div class="header"></div>
+                <input type="checkbox" id="openSidebarMenu">
+                    <label for="openSidebarMenu" class="sidebarIconToggle">
+                        <div class="spinner top"></div>
+                        <div class="spinner middle"></div>
+                        <div class="spinner bottom"></div>
+                    </label>
+
+             <div id="sidebarMenu">
+            <ul class="menu">
+                <li><a href="#"><span class="iconify" data-icon="uil:home-alt"></span>Home</a></li>
+                <li><a href="#"><span class="iconify" data-icon="uil:kayak"></span>Live Streams</a></li>
+                <li><a href="#"><span class="iconify" data-icon="uil:search"></span>Explore</a></li>
+                <div class="dropdown">
+                    <!-- <button onclick="myFunction()" class="dropbtn"><span class="iconify" data-icon="uil:layers"></span>Catagories<i class="fa fa-caret-down"></i></button> -->
+                    <li><a href="#" onclick="myFunction()"><span class="iconify" data-icon="uil:layers"></span>Catagories <i class="fa fa-caret-down"></i></a>  
+                    </li> 
+                    <div id="myDropdown" class="dropdown-content">
+                        <li><a href="#">aaaaa</a></li>
+                        <li> <a href="#">Business</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">DTE</a></li>
+                        <li><a href="#">FGFGFG</a></li>
+                        <li><a href="#">Finance & Accounting</a></li>
+                        <li><a href="#">Health & Fitness</a></li>
+                        <li><a href="#">Human Development</a></li>
+                        <li><a href="#">IT</a></li>
+                        <li><a href="#">IT & Software</a></li>
+                        <li><a href="#">Jose</a></li>
+                        <li><a href="#">Life Style</a></li>
+                        <li><a href="#">Literature</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Motivational</a></li>
+                        <li><a href="#">Multimedia</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Office Productivity</a></li>
+                        <li><a href="#">Personal Develpment</a></li>
+                        <li><a href="#">Photography</a></li>
+                        <li><a href="#">Project Research</a></li>
+                        <li><a href="#">QA</a></li>
+                        <li><a href="#">QC</a></li>
+                        <li><a href="#">Speaking</a></li>
+                        <li><a href="#">SQL</a></li>
+                        <li><a href="#">Teaching & Academics</a></li>
+                    </div>
+                </div>
+                <li><a href="#"><span class="iconify" data-icon="uil:heart"></span>Saved Courses</a></li>
+                <li><a href="#"><span class="iconify" data-icon="uil:abacus"></span>Filter</a></li>
+                <li><a href="#"><span class="iconify" data-icon="uil:bag"></span>Enrolled</a></li>
+                <li><a href="#"><span class="iconify" data-icon="uil:comments"></span>Messages</a></li>
+                <li><a href="#"><span class="iconify" data-icon="uil:bell"></span>Notification</a></li>
+                <hr style="border: 1px solid lightgray">
+                <label id="subscription-label">SUBSCRIPTIONS</label>
+            </ul>
+            
+                <ul class="subscription-menu">
+                    <li><a href="#"><img src="./images/default.png"/>Raziya Blish</a></li>
+                    <li><a href="#"><img src="./images/sidebar-subscriptionImg2.jpg"/>Jassica William</a>
+                        <div class="alert_dot"></div>
+                    </li>
+                    <li><a href="#"><img src="./images/sidebar-subscriptionImg3.jpg"/>Joginder Singh</a>
+                        <div class="alert_dot" id="alert_dot"></div>
+                    </li>
+                    <li><a href="#"><img src="./images/sidebar-subscriptionImg4.jpg"/>Zoena</a>
+                        <div class="alert_dot" id="alert_dot-zoena"></div>
+                    </li>
+                    <li><a href="#"><img src="./images/sidebar-subscriptionImg5.jpg"/>Ridhima</a>
+                        <div class="alert_dot" id="alert_dot-Ridhima"></div>
+                    </li>
+                    <li><a href="#"><span class="iconify" data-icon="uil:eye"></span>See All</a></li>
+                    <li><a href="#"><span class="iconify" data-icon="uil:plus-circle"></span>Browser Instructor</a></li>
+                    <hr>
+                    <li><a href="#" id="setting"><span class="iconify" data-icon="uil:cog"></span>Setting</a></li>
+                    <li><a href="#"><span class="iconify" data-icon="uil:question-circle"></span>Help</a></li>
+                    <li><a href="#"><span class="iconify" data-icon="uil:windsock"></span>Report History</a></li>
+                    <li><a href="#"><span class="iconify" data-icon="uil:comment-alt-exclamation"></span>Send Feedback</a></li>
+                </ul>
+            </div>
+       
+            <div class="logo-img">
+           <a href="#"><img src="./images/logo.svg" alt="no image show"/></a>
+            </div>
+
+            <div class="uil-apps">
+            <span class="iconify" data-icon="uil:apps">
+            </span>
+            <ul class="uil-list">
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">DTE</a></li>
+                <li><a href="#">Finance & Accounting</a></li>
+                <li><a href="#">Health & Fitness</a></li>
+                <li><a href="#">Human Development</a></li>
+                <li><a href="#">IT</a></li>
+                <li><a href="#">IT & Software</a></li>
+                <li><a href="#">Jose</a></li>
+                <li><a href="#">Life style</a></li>
+            </ul>
+            </div>
+        
+
+               <div class="right-header">
+            <ul>
+                <li><a href="#">Enrolled</a></li>
+                <a href="#"><span class="iconify" data-icon="uil:shopping-cart-alt"></span>
+                    <span class="cart-notification">0</span>
+                </a>
+
+                <a href="#"><span class="iconify" data-icon="uil:envelope-add"></span>
+                    <span class="cart-notification">5</span>
+                    <div class="envolpe-DropDown">
+                        <a href="#" onclick="yourFunction()" class="drop-envolpe"></a>
+                        <div id="yourDropdown" class="content-envolpe">
+                            
+                            <a href="#" class="channel_my">
+                                <div class="content-and-img">
+                                    <img src="./images/default.png">                     
+                                </div>
+                                <div class="pd-content">
+                                    <h6>Jemmy</h6>
+                                    <p>6</p>
+                                    <span class="nm-time">1 day ago</span>
+                                </div>
+                            </a>
+
+                            <a href="#" class="channel_my">
+                                <div class="content-and-img">
+                                    <img src="./images/default.png">                     
+                                </div>
+                                <div class="pd-content">
+                                    <h6>Quinton Batchelor</h6>
+                                    <p>Hello</p>
+                                    <span class="nm-time">1 week ago</span>
+                                </div>
+                            </a>
+
+                            <a href="#" class="channel_my">
+                                <div class="content-and-img">
+                                    <img src="./images/default.png">                     
+                                </div>
+                                <div class="pd-content">
+                                    <h6>Amriptal</h6>
+                                    <p>em khong khong</p>
+                                    <span class="nm-time">3 week ago</span>
+                                </div>
+                            </a>
+
+                            <a href="#" class="channel_my">
+                                <div class="content-and-img">
+                                    <img src="./images/default.png">                     
+                                </div>
+                                <div class="pd-content">
+                                    <h6>Instructor</h6>
+                                    <p>This is Portal</p>
+                                    <span class="nm-time">3 week ago</span>
+                                </div>
+                            </a>
+
+                            <a href="#" class="channel_my">
+                                <div class="content-and-img">
+                                    <img src="./images/default.png">                     
+                                </div>
+                                <div class="pd-content">
+                                    <h6>Paez</h6>
+                                    <p>this is test</p>
+                                    <span class="nm-time"> month ago</span>
+                                </div>
+                            </a>
+
+                        </div>
+                        
+                    </div>
+                </a>
+                <a href="#"><span class="iconify" data-icon="uil:bell"></span>
+                    <span class="cart-notification">5</span>
+
+                     <div class="envolpe-DropDown2">
+                        <a href="#" onclick="yourFunction2()" class="drop-envolpe2"></a>
+                        <div id="yourDropdown2" class="content-envolpe2 transition">
+                            
+                            <a href="#" class="channel_my2">
+                                <!-- <div class="content-and-img2">
+                                    <img src="./images/default.png">                     
+                                </div> -->
+                                <div class="pd-content2">
+                                    <p>Live Now (Subscribe Institute)</p>
+                                    <span class="nm-time2">1 week ago</span>
+                                </div>
+                            </a>
+
+                            <a href="#" class="channel_my2">
+                                <!-- <div class="content-and-img2">
+                                    <img src="./images/default.png">                     
+                                </div> -->
+                                <div class="pd-content2">
+                                    <p>Live Now (Subscribe Institute)</p>
+                                    <span class="nm-time2">1 week ago</span>
+                                </div>
+                            </a>
+
+                            <a href="#" class="channel_my2">
+                                <!-- <div class="content-and-img2">
+                                    <img src="./images/default.png">                     
+                                </div> -->
+                                <div class="pd-content2">
+                                    <p>Live Now (Subscribe Institute)</p>
+                                    <span class="nm-time2">2 week ago</span>
+                                </div>
+                            </a>
+
+                            <a href="#" class="channel_my2">
+                                <!-- <div class="content-and-img2">
+                                    <img src="./images/default.png">                     
+                                </div> -->
+                                <div class="pd-content2">
+                                    <p>Live Now (Subscribe Institute)</p>
+                                    <span class="nm-time2">2 week ago</span>
+                                </div>
+                            </a>
+
+                            <a href="#" class="channel_my2">
+                                <!-- <div class="content-and-img2">
+                                    <img src="./images/default.png">                     
+                                </div> -->
+                                <div class="pd-content2">
+                                    <p>Live Now (Subscribe Institute)</p>
+                                    <span class="nm-time2">2 week ago</span>
+                                </div>
+                            </a>
+                            <a href="#" class="vbm_btn">View All<span id="arrow-id" class="iconify" data-icon="uil:arrow-right"></span></a>
+                
+            </ul>
+            <a href="#"><img src="./images/hd_dp.jpg" class="hd-dp-img"/></span>
+                    <div class="parent-account">
+                        <a href="#" onclick="yourFunction3()" class="drop-account"></a>
+                        <div id="yourAccount" class="content-account">
+                            <a href="#" id="accountid" class="my-account">
+                                <div class="content-img-account">
+                                    <img id="img-account" src="./images/hd_dp.jpg">                     
+                                </div>
+                                <div class="pd-content-account">
+                                    <p>student student <span class="iconify" data-icon="uil:check-circle"></span></p>
+                                    <span class="nm-time-account">studentstudent.com</span>
+                                </div>
+                            </a>
+                            <div class="night-mode-parent">
+                                <a href="#" id="night-mode-id">
+                                    <span class="iconify" data-icon="uil:moon"></span>
+                                    <p id="night-mode-title">Night Mode</p>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                      </label>
+                                </a>
+
+                            </div>
+                            <div class="list-account">
+                                <a id="z" href="#">Subscription</a>
+                                <a id="z" href="#">Setting</a>
+                                <a id="z" href="#">Help</a>
+                                <a id="z" href="#">Send Feedback</a>
+                                <a id="z" href="#">Sign Out</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                
+            </a>
+            </div>
+            <div class="parent-body-area">
+            <div class="left-body-area">
+                <div class="Live-stream">
+                    <h2>Live Streams</h2>
+                    <a id="a-seeAll" href="#">See all</a>
+                </div>
+
+                <section>
+                   
+                    <div class="swiper mySwiper container">
+                        <div class="swiper-wrapper content">
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./images/hd_dp.jpg" alt="no image">
+                                </div>
+
+                                <div class="name-profession">
+                                    <span class="name">Joginder Singh</span><br>
+                                    <span class="profession">Live
+                                        <div class="live-div"></div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./images/albert.jpg" alt="no image">
+                                </div>
+
+                                <div class="name-profession">
+                                    <span class="name">Albert</span><br>
+                                    <span class="profession">Live
+                                        <div class="live-div"></div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./images/Amritpal.jpg" alt="no image">
+                                </div>
+
+                                <div class="name-profession">
+                                    <span class="name">Amriptal</span><br>
+                                    <span class="profession">Live
+                                        <div class="live-div"></div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./images/default.png" alt="no image">
+                                </div>
+
+                                <div class="name-profession">
+                                    <span class="name">Default</span><br>
+                                    <span class="profession">Live
+                                        <div class="live-div"></div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./images/eli.jpg" alt="no image">
+                                </div>
+
+                                <div class="name-profession">
+                                    <span class="name">Eli Singh</span><br>
+                                    <span class="profession">Live
+                                        <div class="live-div"></div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./images/jaysen.jpg" alt="no image">
+                                </div>
+
+                                <div class="name-profession">
+                                    <span class="name">Jaysen Singh</span><br>
+                                    <span class="profession">Live
+                                        <div class="live-div"></div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./images/sidebar-subscriptionImg2.jpg" alt="no image">
+                                </div>
+
+                                <div class="name-profession">
+                                    <span class="name">Joginder</span><br>
+                                    <span class="profession">Live
+                                        <div class="live-div"></div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./images/sidebar-subscriptionImg3.jpg" alt="no image">
+                                </div>
+
+                                <div class="name-profession">
+                                    <span class="name"> Singh</span><br>
+                                    <span class="profession">Live
+                                        <div class="live-div"></div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./images/sidebar-subscriptionImg4.jpg" alt="no image">
+                                </div>
+
+                                <div class="name-profession">
+                                    <span class="name">Subscription</span><br>
+                                    <span class="profession">Live
+                                        <div class="live-div"></div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./images/sidebar-subscriptionImg5.jpg" alt="no image">
+                                </div>
+
+                                <div class="name-profession">
+                                    <span class="name">Joginder Sin</span><br>
+                                    <span class="profession">Live
+                                        <div class="live-div"></div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                        <div class="swiper-button-next">></div>
+                        <div class="swiper-button-prev"><</div>
+                        </section>
+
+                    <div class="Featured-Courses">
+                         <h2>Featured Courses</h2>
+                         <a id="a-seeAll2" href="#">See all</a>
+                    </div>
+                    </div>
+
+            <div class="right-body-area">
+                <div class="right-body-content">
+                    <div class="right-content">
+                        <img src="./images/default.png"/>
+                        <a href="#" id="ahmed-karim">Ahmed karem</a>
+                        <p id="back-developer">Backend Developer</p>
+                        <div class="social-icons">
+                            <ul class="icons-ul">
+                                <li><a><i id="fb" class="fab fa-facebook-f"></i></a></li>
+                                <li><a><i id="tw" class="fab fa-twitter"></i></a></li>
+                                <li><a><i id="linkd" class="fab fa-linkedin-in"></i></a></li>
+                                <li><a><i id="yt" class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="student-courses">
+                            <p>1 Students .</p>
+                            <p>1Courses</p>
+                        </div>
+                        <a href="#" id="profile-link">Go To Profile</a>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+                 <div class="parent-feature-courses">
+                    <div class="left-features-courses">
+                        <img src="./images/albert.jpg"/>
+                    </div>
+                            <div class="right-content">
+                                <img src="./images/Amritpal.jpg"/>
+                            </div>
+
+                </div>
+        </div>
+  
+            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+            <script src="js/main.js"></script>
+</body>
+</html>

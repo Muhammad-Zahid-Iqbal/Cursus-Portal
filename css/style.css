@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --green:green;
+}
+*::selection{
+    background:var(--green);
+    color: #fff;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.bg-image{
+    position: relative;
+    height:100%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+ 
+}
+.bg-image::before{
+/* ap ko neechy diye gaye top 0 left 0 right 0 bottom 0 lagana prein gy warna ye kam ni kry ga*/
+    content: "";
+    background: url('../images/sign.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.09;
+    background-color: rgb(180, 165, 165);
+}
+.logo-img{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.logo-img img{
+    width: 14rem;
+    height: 5rem;
+    margin-top: 5rem;
+}
+.main-page-login{
+    width:550px;
+    height: 750px;
+    border: 8rem solid white;
+    box-shadow: 5px 10px 8px 7px rgb(237, 228, 228);
+    margin-left: 40rem;
+    background: white;
+    position: relative;
+    margin-top: 5rem;
+}
+.title{
+    font-size: 24px;
+    margin-bottom: 17px;
+    margin-top: 1px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+.paragraph{
+    font-size: 14px;
+    margin-bottom: 47px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #686f7a;
+    text-align: center;
+    line-height: 26px;
+}
+.btn{
+    width: 100%;
+    height: 9%; 
+    padding: 10rem;
+    
+}
+#google-icon-style{
+   margin-left: 2rem;
+    font-size: 2rem;
+    margin: -5px;
+    margin-right: 12px;
+}
+ .input-container{
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: -30px;
+    position: relative;
+    /* border: 1px solid black; */
+} 
+.input-container input[type=text]{
+    width: 39.5rem;
+    margin-left: -23px;
+    margin-top: -30px;
+    border: 0 solid #aaa;
+    box-shadow: 0 0 10px lightgray;
+    border-radius: 4px;
+    outline: none;
+    padding: 15px;
+    transition: .3s;
+}
+
+.input-container input[type=text]{
+    padding-left: 55px;
+}
+.input-container i{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    padding: 10px 10px;
+    color: #aaa;
+    font-size: 20px;
+    
+}
+.input-container #key-icon{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    padding: 10px 10px;
+    color: #aaa;
+    font-size: 20px;
+}
+
+.input-container input[type=password]{
+    width: 39.5rem;
+    margin-left: -23px;
+    margin-top: -20px;
+    border: 0 solid #aaa;
+    box-shadow: 0 0 10px lightgray;
+    border-radius: 4px;
+    outline: none;
+    padding: 15px;
+    transition: .3s;
+}
+.input-container input[type=password]{
+    padding-left: 55px;
+}
+#checkBox{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-left: -20px;
+}
+#label-text{
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 15px;
+    color: rgb(95, 90, 90);
+}
+.btn-login{
+    width: 100%; 
+    padding: 10px;
+    color: white;
+    background: red;
+    margin-top: 5rem;
+}
+.forgot-password{
+    margin-top: 5rem;
+    font-size: 1.5rem;
+}
+#forgt-ps{
+    color: #aaa;
+}
+#forgot-pass{
+    color: red;
+}
+#sign-up-color{
+    color: red;
+}
+.footer-area{
+    width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#footer-img{
+    margin-top: -10px;
+    margin-right: 20px;
+}
+
+  
